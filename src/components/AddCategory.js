@@ -29,12 +29,14 @@ export const AddCategory = ({ setCategories }) => {
     }
 
     return (
-        <form onSubmit={ handdleSubmit }>
+        // onSubmit es al presionar enter
+        <form onSubmit={ handdleSubmit }>  
             <input 
                 type="text"
                 value = { inputValue }
                 onChange = { handdleInputChange }
             />
+            <button onClick={ handdleSubmit }>Buscar Gif</button>
         </form>
     )
 
